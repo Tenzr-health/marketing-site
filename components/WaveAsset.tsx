@@ -4,7 +4,7 @@
 
 interface WaveAssetProps {
   className?: string;
-  variant?: 'top' | 'bottom' | 'middle';
+  variant?: 'top' | 'bottom';
 }
 
 export default function WaveAsset({ className = '', variant = 'top' }: WaveAssetProps) {

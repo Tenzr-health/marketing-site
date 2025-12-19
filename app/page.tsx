@@ -228,15 +228,15 @@ export default function Home() {
                     <ul className="space-y-2 text-neutral-700">
                       <li className="flex items-start">
                         <span className="mr-2">•</span>
-                        <span>Clinicians assess each patient&apos;s needs and goals as usual during the first</span>
+                        <span>Clinicians assess each patient&apos;s needs and goals as usual during the first visit</span>
                       </li>
                       <li className="flex items-start">
                         <span className="mr-2">•</span>
-                        <span>With Tenzr, that plan is extended into a digital format — giving patients guided</span>
+                        <span>With Tenzr, that plan is extended into a digital format — giving patients guided exercises and education</span>
                       </li>
                       <li className="flex items-start">
                         <span className="mr-2">•</span>
-                        <span>With Tenzr, that plan is extended into a digital format — giving patients guided</span>
+                        <span>Programs are tailored to individual needs and automatically adjust based on progress and feedback</span>
                       </li>
                     </ul>
                   </div>
@@ -280,15 +280,15 @@ export default function Home() {
                     <ul className="space-y-2 text-neutral-700">
                       <li className="flex items-start">
                         <span className="mr-2">•</span>
-                        <span>Clinicians assess each patient&apos;s needs and goals as usual during the first</span>
+                        <span>Patients receive daily reminders and track their activities through the mobile app</span>
                       </li>
                       <li className="flex items-start">
                         <span className="mr-2">•</span>
-                        <span>With Tenzr, that plan is extended into a digital format — giving patients</span>
+                        <span>Interactive exercises with real-time feedback help ensure proper form and technique</span>
                       </li>
                       <li className="flex items-start">
                         <span className="mr-2">•</span>
-                        <span>With Tenzr, that plan is extended into a digital format — giving patients guided</span>
+                        <span>Progress tracking and achievements keep patients motivated throughout their recovery journey</span>
                       </li>
                     </ul>
                   </div>
@@ -305,15 +305,15 @@ export default function Home() {
                     <ul className="space-y-2 text-neutral-700">
                       <li className="flex items-start">
                         <span className="mr-2">•</span>
-                        <span>Clinicians assess each patient&apos;s needs and goals as usual during the first</span>
+                        <span>Dashboard provides clear insights into patient adherence and progress metrics</span>
                       </li>
                       <li className="flex items-start">
                         <span className="mr-2">•</span>
-                        <span>With Tenzr, that plan is extended into a digital format — giving patients</span>
+                        <span>Automated alerts flag patients who may need additional support or intervention</span>
                       </li>
                       <li className="flex items-start">
                         <span className="mr-2">•</span>
-                        <span>With Tenzr, that plan is extended into a digital format — giving patients guided</span>
+                        <span>Quick adjustments to care plans can be made directly in the system and sync to patient apps</span>
                       </li>
                     </ul>
                   </div>
