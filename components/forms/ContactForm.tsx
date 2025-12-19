@@ -48,90 +48,90 @@ export default function ContactForm() {
   };
 
   return (
-    <form onSubmit={handleSubmit(onSubmit)} className="space-y-6 max-w-2xl">
+    <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
       <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
         <div>
-          <label htmlFor="firstname" className="block text-sm font-medium text-gray-700">
-            First Name <span className="text-red-500">*</span>
+          <label htmlFor="firstname" className="block text-sm font-medium text-neutral-900 mb-2">
+            First Name <span className="text-primary-500">*</span>
           </label>
           <input
             {...register('firstname')}
             type="text"
             id="firstname"
-            className="mt-1 block w-full rounded-md border border-gray-300 px-3 py-2 shadow-sm focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-500"
+            className="block w-full rounded-lg border border-neutral-200 px-4 py-3 focus:border-primary-500 focus:outline-none focus:ring-2 focus:ring-primary-500 transition-colors"
           />
           {errors.firstname && (
-            <p className="mt-1 text-sm text-red-600">{errors.firstname.message}</p>
+            <p className="mt-1 text-sm text-primary-500">{errors.firstname.message}</p>
           )}
         </div>
 
         <div>
-          <label htmlFor="lastname" className="block text-sm font-medium text-gray-700">
-            Last Name <span className="text-red-500">*</span>
+          <label htmlFor="lastname" className="block text-sm font-medium text-neutral-900 mb-2">
+            Last Name <span className="text-primary-500">*</span>
           </label>
           <input
             {...register('lastname')}
             type="text"
             id="lastname"
-            className="mt-1 block w-full rounded-md border border-gray-300 px-3 py-2 shadow-sm focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-500"
+            className="block w-full rounded-lg border border-neutral-200 px-4 py-3 focus:border-primary-500 focus:outline-none focus:ring-2 focus:ring-primary-500 transition-colors"
           />
           {errors.lastname && (
-            <p className="mt-1 text-sm text-red-600">{errors.lastname.message}</p>
+            <p className="mt-1 text-sm text-primary-500">{errors.lastname.message}</p>
           )}
         </div>
       </div>
 
       <div>
-        <label htmlFor="email" className="block text-sm font-medium text-gray-700">
-          Email <span className="text-red-500">*</span>
+        <label htmlFor="email" className="block text-sm font-medium text-neutral-900 mb-2">
+          Email <span className="text-primary-500">*</span>
         </label>
         <input
           {...register('email')}
           type="email"
           id="email"
-          className="mt-1 block w-full rounded-md border border-gray-300 px-3 py-2 shadow-sm focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-500"
+          className="block w-full rounded-lg border border-neutral-200 px-4 py-3 focus:border-primary-500 focus:outline-none focus:ring-2 focus:ring-primary-500 transition-colors"
         />
         {errors.email && (
-          <p className="mt-1 text-sm text-red-600">{errors.email.message}</p>
+          <p className="mt-1 text-sm text-primary-500">{errors.email.message}</p>
         )}
       </div>
 
       <div>
-        <label htmlFor="company" className="block text-sm font-medium text-gray-700">
+        <label htmlFor="company" className="block text-sm font-medium text-neutral-900 mb-2">
           Company
         </label>
         <input
           {...register('company')}
           type="text"
           id="company"
-          className="mt-1 block w-full rounded-md border border-gray-300 px-3 py-2 shadow-sm focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-500"
+          className="block w-full rounded-lg border border-neutral-200 px-4 py-3 focus:border-primary-500 focus:outline-none focus:ring-2 focus:ring-primary-500 transition-colors"
         />
       </div>
 
       <div>
-        <label htmlFor="phone" className="block text-sm font-medium text-gray-700">
+        <label htmlFor="phone" className="block text-sm font-medium text-neutral-900 mb-2">
           Phone
         </label>
         <input
           {...register('phone')}
           type="tel"
           id="phone"
-          className="mt-1 block w-full rounded-md border border-gray-300 px-3 py-2 shadow-sm focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-500"
+          className="block w-full rounded-lg border border-neutral-200 px-4 py-3 focus:border-primary-500 focus:outline-none focus:ring-2 focus:ring-primary-500 transition-colors"
         />
       </div>
 
       <div>
-        <label htmlFor="message" className="block text-sm font-medium text-gray-700">
-          Message <span className="text-red-500">*</span>
+        <label htmlFor="message" className="block text-sm font-medium text-neutral-900 mb-2">
+          Message <span className="text-primary-500">*</span>
         </label>
         <textarea
           {...register('message')}
           id="message"
           rows={4}
-          className="mt-1 block w-full rounded-md border border-gray-300 px-3 py-2 shadow-sm focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-500"
+          className="block w-full rounded-lg border border-neutral-200 px-4 py-3 focus:border-primary-500 focus:outline-none focus:ring-2 focus:ring-primary-500 transition-colors"
         />
         {errors.message && (
-          <p className="mt-1 text-sm text-red-600">{errors.message.message}</p>
+          <p className="mt-1 text-sm text-primary-500">{errors.message.message}</p>
         )}
       </div>
 
@@ -139,23 +139,23 @@ export default function ContactForm() {
         <button
           type="submit"
           disabled={submitStatus === 'loading'}
-          className="inline-flex justify-center rounded-md border border-transparent bg-blue-600 py-2 px-4 text-sm font-medium text-white shadow-sm hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 disabled:bg-gray-400 disabled:cursor-not-allowed"
+          className="inline-flex justify-center rounded-full border border-transparent bg-primary-500 py-3 px-8 text-base font-medium text-white hover:bg-primary-600 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 disabled:bg-neutral-400 disabled:cursor-not-allowed transition-colors"
         >
           {submitStatus === 'loading' ? 'Submitting...' : 'Submit'}
         </button>
       </div>
 
       {submitStatus === 'success' && (
-        <div className="rounded-md bg-green-50 p-4">
-          <p className="text-sm text-green-800">
+        <div className="rounded-lg bg-primary-100 border border-primary-300 p-4">
+          <p className="text-sm text-neutral-900">
             Thank you! Your message has been submitted successfully.
           </p>
         </div>
       )}
 
       {submitStatus === 'error' && (
-        <div className="rounded-md bg-red-50 p-4">
-          <p className="text-sm text-red-800">{errorMessage}</p>
+        <div className="rounded-lg bg-primary-100 border border-primary-300 p-4">
+          <p className="text-sm text-neutral-900">{errorMessage}</p>
         </div>
       )}
     </form>

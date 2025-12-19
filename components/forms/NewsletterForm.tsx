@@ -43,43 +43,43 @@ export default function NewsletterForm() {
   };
 
   return (
-    <form onSubmit={handleSubmit(onSubmit)} className="space-y-4 max-w-md">
+    <form onSubmit={handleSubmit(onSubmit)} className="space-y-4 max-w-md mx-auto">
       <div>
-        <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
+        <label htmlFor="email" className="block text-sm font-medium text-white mb-3">
           Subscribe to our newsletter
         </label>
-        <div className="flex gap-2">
+        <div className="flex gap-3">
           <input
             {...register('email')}
             type="email"
             id="email"
             placeholder="Enter your email"
-            className="flex-1 rounded-md border border-gray-300 px-3 py-2 shadow-sm focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-500"
+            className="flex-1 rounded-lg border border-primary-400 px-4 py-3 bg-white focus:border-primary-500 focus:outline-none focus:ring-2 focus:ring-white transition-colors"
           />
           <button
             type="submit"
             disabled={submitStatus === 'loading'}
-            className="inline-flex justify-center rounded-md border border-transparent bg-blue-600 py-2 px-4 text-sm font-medium text-white shadow-sm hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 disabled:bg-gray-400 disabled:cursor-not-allowed"
+            className="inline-flex justify-center rounded-lg border border-transparent bg-white py-3 px-6 text-base font-medium text-primary-500 hover:bg-primary-50 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-primary-500 disabled:bg-neutral-200 disabled:cursor-not-allowed transition-colors"
           >
             {submitStatus === 'loading' ? 'Subscribing...' : 'Subscribe'}
           </button>
         </div>
         {errors.email && (
-          <p className="mt-1 text-sm text-red-600">{errors.email.message}</p>
+          <p className="mt-2 text-sm text-white">{errors.email.message}</p>
         )}
       </div>
 
       {submitStatus === 'success' && (
-        <div className="rounded-md bg-green-50 p-3">
-          <p className="text-sm text-green-800">
+        <div className="rounded-lg bg-primary-400 border border-white p-3">
+          <p className="text-sm text-white">
             Thank you for subscribing!
           </p>
         </div>
       )}
 
       {submitStatus === 'error' && (
-        <div className="rounded-md bg-red-50 p-3">
-          <p className="text-sm text-red-800">{errorMessage}</p>
+        <div className="rounded-lg bg-primary-400 border border-white p-3">
+          <p className="text-sm text-white">{errorMessage}</p>
         </div>
       )}
     </form>
