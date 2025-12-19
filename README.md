@@ -174,21 +174,21 @@ This site uses Tailwind CSS, which makes it easy to convert Figma designs:
 
 ### Example: Adding Custom Colors
 
-Edit `tailwind.config.ts`:
+This project uses Tailwind CSS v4, which uses CSS variables for customization. Add custom colors in `app/globals.css`:
 
-```typescript
-export default {
-  theme: {
-    extend: {
-      colors: {
-        brand: {
-          primary: '#0066CC',
-          secondary: '#FF6B35',
-        }
-      }
-    }
-  }
+```css
+@theme {
+  --color-brand-primary: #0066cc;
+  --color-brand-secondary: #ff6b35;
 }
+```
+
+Then use them in your components:
+
+```tsx
+<div className="bg-brand-primary text-white">
+  Custom branded section
+</div>
 ```
 
 ## Deployment
