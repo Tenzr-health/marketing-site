@@ -3,6 +3,7 @@ FROM node:20-alpine AS base
 
 # Install dependencies only when needed
 FROM base AS deps
+# libc6-compat is needed for Next.js compatibility with Alpine Linux (musl libc)
 RUN apk add --no-cache libc6-compat
 WORKDIR /app
 

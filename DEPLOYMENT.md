@@ -14,7 +14,7 @@ This guide covers deploying the Tenzr Health marketing site using Docker contain
 ### 1. Clone the Repository
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/Tenzr-health/marketing-site.git
 cd marketing-site
 ```
 
@@ -118,7 +118,7 @@ docker-compose restart
 2. **Deploy the application:**
    ```bash
    # Clone repository
-   git clone <repository-url>
+   git clone https://github.com/Tenzr-health/marketing-site.git
    cd marketing-site
    
    # Configure environment
