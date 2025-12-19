@@ -193,7 +193,33 @@ Then use them in your components:
 
 ## Deployment
 
-### Vercel (Recommended)
+### Docker (Recommended for Self-Hosting)
+
+For complete Docker deployment instructions, see **[DEPLOYMENT.md](./DEPLOYMENT.md)**.
+
+Quick start with Docker:
+
+```bash
+# Build and run with Docker Compose
+docker-compose up -d
+
+# Or build manually
+docker build -t tenzr-marketing-site .
+docker run -d -p 3000:3000 \
+  -e NEXT_PUBLIC_HUBSPOT_PORTAL_ID=your_id \
+  tenzr-marketing-site
+```
+
+The Docker deployment guide includes:
+- Production deployment configurations
+- Kubernetes and Docker Swarm examples
+- NGINX reverse proxy setup
+- SSL/TLS configuration with Let's Encrypt
+- Monitoring and logging
+- Security best practices
+- Troubleshooting guide
+
+### Vercel
 
 1. Push your code to GitHub
 2. Import your repository in Vercel
@@ -206,7 +232,7 @@ Works with any platform that supports Next.js:
 - Netlify
 - AWS Amplify
 - Digital Ocean
-- Self-hosted with Node.js
+- Self-hosted with Node.js or Docker
 
 ## Development
 
