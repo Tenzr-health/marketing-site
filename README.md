@@ -1,16 +1,16 @@
-# Marketing Site
+# Tenzr Health Marketing Site
 
-A modern, responsive marketing website built with **Next.js 14**, **TypeScript**, and **Tailwind CSS**. Integrated with **HubSpot** for form submissions and visitor tracking, plus **Cloudflare Web Analytics** for lightweight performance monitoring.
+A modern marketing website for Tenzr Health, built with **Next.js 15**, **TypeScript**, and **Tailwind CSS**. Integrated with **HubSpot** for patient engagement and **Cloudflare Web Analytics**.
+
+Hosted at [tenzr-health.github.io](https://tenzr-health.github.io/marketing-site/).
 
 ## Features
 
-- 🎨 **Figma-Ready Design System** - Built with Tailwind CSS for easy translation from design to code
-- 📝 **HubSpot Form Integration** - Contact forms and newsletter signups automatically submit to HubSpot
-- 📊 **Visitor Tracking** - HubSpot tracking script for comprehensive analytics
-- ⚡ **Cloudflare Analytics** - Lightweight visitor tracking and performance monitoring
-- 🔒 **Type-Safe Forms** - React Hook Form with Zod validation
-- 🚀 **Performance Optimized** - Built on Next.js with static generation and optimized images
-- 📱 **Fully Responsive** - Mobile-first design that works on all devices
+- 🎨 **Tenzr Design System** - Built with Tailwind CSS v4 for consistent branding
+- 📝 **HubSpot Integration** - Patient intake and newsletter forms synced with HubSpot CRM
+- 📊 **Recovery Tracking** - Showcasing Tenzr's advanced wearable technology and analytics
+- ⚡ **Performance Optimized** - Static export for fast loading and GitHub Pages compatibility
+- 📱 **Responsive Design** - Seamless experience across mobile, tablet, and desktop devices
 
 ## Quick Start
 
@@ -65,12 +65,14 @@ npm run start
 
 ### Getting Your HubSpot API Keys
 
-1. **Portal ID**: 
+1. **Portal ID**:
+
    - Log in to HubSpot
    - Go to Settings > Account Setup > Account Defaults
    - Find your Hub ID (Portal ID)
 
 2. **Access Token**:
+
    - Go to Settings > Integrations > Private Apps
    - Create a new private app
    - Grant necessary scopes: `crm.objects.contacts.write`, `forms`
@@ -84,6 +86,7 @@ npm run start
 ### Setting Up Forms in HubSpot
 
 1. Create a **Contact Form** with fields:
+
    - firstname
    - lastname
    - email
@@ -134,6 +137,7 @@ marketing-site/
 ### ContactForm
 
 A full-featured contact form with validation:
+
 - First name, last name, email (required)
 - Company, phone (optional)
 - Message field
@@ -144,6 +148,7 @@ A full-featured contact form with validation:
 ### NewsletterForm
 
 Simple email signup form:
+
 - Email input with validation
 - One-click subscribe
 - HubSpot integration
@@ -153,6 +158,7 @@ Simple email signup form:
 Two methods of integration:
 
 1. **Client-side Forms API** (used in forms):
+
    - Direct submission to HubSpot Forms API
    - No server required
    - Includes visitor tracking token
@@ -186,9 +192,7 @@ This project uses Tailwind CSS v4, which uses CSS variables for customization. A
 Then use them in your components:
 
 ```tsx
-<div className="bg-brand-primary text-white">
-  Custom branded section
-</div>
+<div className="bg-brand-primary text-white">Custom branded section</div>
 ```
 
 ## Deployment
@@ -211,6 +215,7 @@ docker run -d -p 3000:3000 \
 ```
 
 The Docker deployment guide includes:
+
 - Production deployment configurations
 - Kubernetes and Docker Swarm examples
 - NGINX reverse proxy setup
@@ -229,6 +234,7 @@ The Docker deployment guide includes:
 ### Other Platforms
 
 Works with any platform that supports Next.js:
+
 - Netlify
 - AWS Amplify
 - Digital Ocean

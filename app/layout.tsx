@@ -1,11 +1,12 @@
-import type { Metadata } from "next";
-import "./globals.css";
-import HubSpotTracking from "@/components/HubSpotTracking";
-import CloudflareAnalytics from "@/components/CloudflareAnalytics";
+import type { Metadata } from 'next';
+import './globals.css';
+import HubSpotTracking from '@/components/HubSpotTracking';
+import CloudflareAnalytics from '@/components/CloudflareAnalytics';
 
 export const metadata: Metadata = {
-  title: "Marketing Site - Powered by HubSpot",
-  description: "A modern marketing website with HubSpot integration for forms and analytics",
+  title: 'Tenzr Health - Modern Recovery Tracking',
+  description:
+    'Tenzr Health provides advanced recovery tracking and analytics for patients and clinicians.',
 };
 
 export default function RootLayout({
@@ -20,7 +21,7 @@ export default function RootLayout({
     <html lang="en">
       <body className="antialiased">
         {children}
-        
+
         {/* Analytics Scripts */}
         {hubspotPortalId && <HubSpotTracking portalId={hubspotPortalId} />}
         {cloudflareToken && <CloudflareAnalytics token={cloudflareToken} />}
