@@ -3,7 +3,7 @@
 
 // @ts-ignore
 const isProd = typeof process !== 'undefined' && process.env.NODE_ENV === 'production';
-export const basePath = isProd ? '/marketing-site' : '';
+export const basePath = '';
 
 export const assets = {
   // Main images
