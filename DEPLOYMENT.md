@@ -266,7 +266,7 @@ kubectl apply -f k8s-deployment.yaml
 
 ## Health Checks
 
-The application includes a health check endpoint at `/api/health`. Configure your load balancer or orchestrator to use this endpoint.
+The application can be monitored by checking the root path `/`. Configure your load balancer or orchestrator to use this endpoint.
 
 Example health check configuration:
 - **Interval**: 30 seconds
