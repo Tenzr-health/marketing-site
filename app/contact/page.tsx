@@ -1,9 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import ContactForm from "@/components/forms/ContactForm";
-
-const isProd = process.env.NODE_ENV === "production";
-const basePath = isProd ? "/marketing-site" : "";
+import { basePath } from "@/lib/assets/images";
 
 export const metadata = {
   title: "Contact Us - Tenzr Health",

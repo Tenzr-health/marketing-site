@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { assets } from "@/public/assets/images";
+import { assets } from "@/lib/assets/images";
 
 export default function Home() {
   return (

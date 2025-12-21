@@ -74,7 +74,7 @@ export async function submitContactForm(data: {
     return;
   }
 
-  return submitHubSpotForm(portalId, formId, data);
+  return submitHubSpotForm(portalId, formId, data as Record<string, string>);
 }
 
 /**
@@ -89,5 +89,5 @@ export async function submitNewsletterForm(data: { email: string }) {
     return;
   }
 
-  return submitHubSpotForm(portalId, formId, data);
+  return submitHubSpotForm(portalId, formId, data as Record<string, string>);
 }

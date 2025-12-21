@@ -1,8 +1,9 @@
 // Figma asset URLs - these are served from the Figma localhost server during development
 // In production, these should be replaced with actual hosted assets
 
-const isProd = process.env.NODE_ENV === 'production';
-const basePath = isProd ? '/marketing-site' : '';
+// @ts-ignore
+const isProd = typeof process !== 'undefined' && process.env.NODE_ENV === 'production';
+export const basePath = isProd ? '/marketing-site' : '';
 
 export const assets = {
   // Main images
