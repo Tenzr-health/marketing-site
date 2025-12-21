@@ -3,7 +3,7 @@ const isProd = process.env.NODE_ENV === 'production';
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: 'export',
-  basePath: '/marketing-site',
+  basePath: isProd ? '/marketing-site' : '',
   trailingSlash: true,
   images: {
     unoptimized: true,
