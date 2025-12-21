@@ -1,10 +1,10 @@
-import Link from "next/link";
-import Image from "next/image";
-import ContactForm from "@/components/forms/ContactForm";
-import { basePath } from "@/lib/assets/images";
+import Link from 'next/link';
+import Image from 'next/image';
+import ContactForm from '@/components/forms/ContactForm';
+import { basePath } from '@/lib/assets/images';
 
 export const metadata = {
-  title: "Contact Us - Tenzr Health",
+  title: 'Contact Us - Tenzr Health',
   description:
     "Get in touch with us. Fill out the form and we'll get back to you shortly.",
 };

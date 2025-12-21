@@ -1,5 +1,5 @@
-import Link from "next/link";
-import { assets } from "@/lib/assets/images";
+import Link from 'next/link';
+import { assets } from '@/lib/assets/images';
 
 export default function Home() {
   return (
@@ -144,7 +144,7 @@ export default function Home() {
               Most recovery takes place while patients are living their lives —
               working, caring for family, or doing chores.
               <span className="text-[#845ec0]">
-                {" "}
+                {' '}
                 The time between clinic visits is when patients can feel unsure,
                 preventable setbacks can occur, and outcomes can suffer.
               </span>
@@ -160,13 +160,13 @@ export default function Home() {
               alt=""
               className="absolute inset-0 w-full h-full mix-blend-hard-light"
               src={assets.subtract}
-              style={{ filter: "opacity(0.5)" }}
+              style={{ filter: 'opacity(0.5)' }}
             />
             <img
               alt=""
               className="absolute inset-0 w-full h-full mix-blend-hard-light"
               src={assets.subtract1}
-              style={{ filter: "opacity(0.5)" }}
+              style={{ filter: 'opacity(0.5)' }}
             />
           </div>
         </div>
@@ -183,13 +183,13 @@ export default function Home() {
               alt=""
               className="absolute inset-0 w-full h-full mix-blend-hard-light"
               src={assets.subtract2}
-              style={{ filter: "opacity(0.5)" }}
+              style={{ filter: 'opacity(0.5)' }}
             />
             <img
               alt=""
               className="absolute inset-0 w-full h-full mix-blend-hard-light"
               src={assets.subtract3}
-              style={{ filter: "opacity(0.5)" }}
+              style={{ filter: 'opacity(0.5)' }}
             />
           </div>
           <div className="flex flex-col gap-4 items-start w-[512px]">
@@ -199,7 +199,7 @@ export default function Home() {
             <div className="text-[16px] text-[#495057] leading-[1.4] w-full">
               <p className="mb-0">
                 Tenzr extends the clinician&apos;s care beyond the clinic —
-                ensuring every patient is{" "}
+                ensuring every patient is{' '}
                 <span className="text-[#845ec0]">
                   guided, supported, and set up for success.
                 </span>
