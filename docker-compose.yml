@@ -1,0 +1,25 @@
+services:
+  marketing-site:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: tenzr-marketing-site
+    ports:
+      - "3000:3000"
+    environment:
+      # HubSpot Configuration
+      - NEXT_PUBLIC_HUBSPOT_PORTAL_ID=${NEXT_PUBLIC_HUBSPOT_PORTAL_ID}
+      - NEXT_PUBLIC_HUBSPOT_CONTACT_FORM_ID=${NEXT_PUBLIC_HUBSPOT_CONTACT_FORM_ID}
+      - NEXT_PUBLIC_HUBSPOT_NEWSLETTER_FORM_ID=${NEXT_PUBLIC_HUBSPOT_NEWSLETTER_FORM_ID}
+      - HUBSPOT_ACCESS_TOKEN=${HUBSPOT_ACCESS_TOKEN}
+      # Cloudflare Analytics
+      - NEXT_PUBLIC_CLOUDFLARE_ANALYTICS_TOKEN=${NEXT_PUBLIC_CLOUDFLARE_ANALYTICS_TOKEN}
+      # Node environment
+      - NODE_ENV=production
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "node", "-e", "require('http').get('http://localhost:3000/', (res) => process.exit(res.statusCode === 200 ? 0 : 1))"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
