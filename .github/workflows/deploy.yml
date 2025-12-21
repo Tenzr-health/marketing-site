@@ -32,14 +32,21 @@ jobs:
       
       - name: Setup Pages
         uses: actions/configure-pages@v4
-        with:
-          static_site_generator: next
       
       - name: Install dependencies
-        run: npm install
+        run: npm ci
       
+      - name: Check for config conflicts
+        run: |
+          if [ -f next.config.js ]; then
+            echo "Warning: next.config.js found, removing to avoid conflict with next.config.mjs"
+            rm next.config.js
+          fi
+
       - name: Build with Next.js
         run: npm run build
+        env:
+          NODE_ENV: production
       
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
