@@ -7,7 +7,8 @@ const basePath = isProd ? "/marketing-site" : "";
 
 export const metadata = {
   title: "Contact Us - Tenzr Health",
-  description: "Get in touch with us. Fill out the form and we'll get back to you shortly.",
+  description:
+    "Get in touch with us. Fill out the form and we'll get back to you shortly.",
 };
 
 export default function ContactPage() {
@@ -17,18 +18,32 @@ export default function ContactPage() {
       <header className="bg-white border-b border-neutral-100">
         <nav className="max-w-7xl mx-auto px-4 sm:px-8 py-5">
           <div className="flex justify-between items-center">
-            <div className="text-2xl font-bold text-neutral-900">Tenzr Health</div>
+            <div className="text-2xl font-bold text-neutral-900">
+              Tenzr Health
+            </div>
             <div className="flex gap-8">
-              <Link href="/" className="text-neutral-900 hover:text-primary-500 transition-colors">
+              <Link
+                href="/"
+                className="text-neutral-900 hover:text-primary-500 transition-colors"
+              >
                 About
               </Link>
-              <Link href="/#features" className="text-neutral-900 hover:text-primary-500 transition-colors">
+              <Link
+                href="/#features"
+                className="text-neutral-900 hover:text-primary-500 transition-colors"
+              >
                 Features
               </Link>
-              <Link href="/#testimonials" className="text-neutral-900 hover:text-primary-500 transition-colors">
+              <Link
+                href="/#testimonials"
+                className="text-neutral-900 hover:text-primary-500 transition-colors"
+              >
                 Testimonials
               </Link>
-              <Link href="/contact" className="text-neutral-900 hover:text-primary-500 transition-colors">
+              <Link
+                href="/contact"
+                className="text-neutral-900 hover:text-primary-500 transition-colors"
+              >
                 Contact Us
               </Link>
             </div>
@@ -44,7 +59,8 @@ export default function ContactPage() {
               Get in Touch
             </h1>
             <p className="text-lg sm:text-xl text-neutral-700">
-              Have a question or want to work together? Fill out the form below and we&apos;ll get back to you shortly.
+              Have a question or want to work together? Fill out the form below
+              and we&apos;ll get back to you shortly.
             </p>
           </div>
 
