@@ -2,6 +2,9 @@ import Link from "next/link";
 import Image from "next/image";
 import ContactForm from "@/components/forms/ContactForm";
 
+const isProd = process.env.NODE_ENV === "production";
+const basePath = isProd ? "/marketing-site" : "";
+
 export const metadata = {
   title: "Contact Us - Tenzr Health",
   description: "Get in touch with us. Fill out the form and we'll get back to you shortly.",
@@ -54,7 +57,7 @@ export default function ContactPage() {
             <div className="bg-primary-50 p-6 sm:p-8 rounded-2xl">
               <div className="mb-4">
                 <Image
-                  src="/placeholders/icon.svg"
+                  src={`${basePath}/placeholders/icon.svg`}
                   alt="Email icon"
                   width={80}
                   height={80}
@@ -68,7 +71,7 @@ export default function ContactPage() {
             <div className="bg-primary-50 p-6 sm:p-8 rounded-2xl">
               <div className="mb-4">
                 <Image
-                  src="/placeholders/icon.svg"
+                  src={`${basePath}/placeholders/icon.svg`}
                   alt="Phone icon"
                   width={80}
                   height={80}
@@ -82,7 +85,7 @@ export default function ContactPage() {
             <div className="bg-primary-50 p-6 sm:p-8 rounded-2xl">
               <div className="mb-4">
                 <Image
-                  src="/placeholders/icon.svg"
+                  src={`${basePath}/placeholders/icon.svg`}
                   alt="Location icon"
                   width={80}
                   height={80}

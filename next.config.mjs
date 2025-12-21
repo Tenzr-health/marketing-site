@@ -1,7 +1,11 @@
+const isProd = process.env.NODE_ENV === 'production';
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'standalone',
+  output: 'export',
+  basePath: isProd ? '/marketing-site' : '',
   images: {
+    unoptimized: true,
     remotePatterns: [
       {
         protocol: 'https',

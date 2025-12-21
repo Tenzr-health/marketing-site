@@ -70,7 +70,8 @@ export async function submitContactForm(data: {
   const formId = process.env.NEXT_PUBLIC_HUBSPOT_CONTACT_FORM_ID;
 
   if (!portalId || !formId) {
-    throw new Error('HubSpot configuration is missing');
+    console.warn('HubSpot configuration is missing. Form submission will not work.');
+    return;
   }
 
   return submitHubSpotForm(portalId, formId, data);
@@ -84,7 +85,8 @@ export async function submitNewsletterForm(data: { email: string }) {
   const formId = process.env.NEXT_PUBLIC_HUBSPOT_NEWSLETTER_FORM_ID;
 
   if (!portalId || !formId) {
-    throw new Error('HubSpot configuration is missing');
+    console.warn('HubSpot configuration is missing. Newsletter submission will not work.');
+    return;
   }
 
   return submitHubSpotForm(portalId, formId, data);
