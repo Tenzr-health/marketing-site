@@ -40,3 +40,12 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Docker
+.docker
