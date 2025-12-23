@@ -49,3 +49,10 @@ next-env.d.ts
 
 # Docker
 .docker
+
+# Playwright MCP screenshots (development only)
+.playwright-mcp/
+
+# Test images
+*.test.png
+test-*.png

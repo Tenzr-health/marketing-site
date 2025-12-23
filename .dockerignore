@@ -48,3 +48,7 @@ yarn-error.log*
 # Temporary files
 *.tmp
 .tmp
+# Development tools
+.playwright-mcp
+*.test.png
+test-*.png
