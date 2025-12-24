@@ -535,7 +535,7 @@ export default function Home() {
               Hear from our Patients
             </h3>
           </div>
-          <div 
+          <div
             className="w-full overflow-x-auto scrollbar-hide px-4 sm:px-6 md:px-10 lg:px-12 cursor-grab active:cursor-grabbing touch-pan-x"
             onMouseDown={(e) => {
               const slider = e.currentTarget;
@@ -543,21 +543,21 @@ export default function Home() {
               let isDown = true;
               let startX = e.pageX - slider.offsetLeft;
               let scrollLeft = slider.scrollLeft;
-              
+
               const handleMouseMove = (e: MouseEvent) => {
                 if (!isDown) return;
                 e.preventDefault();
                 const x = e.pageX - slider.offsetLeft;
-                const walk = (x - startX);
+                const walk = x - startX;
                 slider.scrollLeft = scrollLeft - walk;
               };
-              
+
               const handleMouseUp = () => {
                 isDown = false;
                 document.removeEventListener('mousemove', handleMouseMove);
                 document.removeEventListener('mouseup', handleMouseUp);
               };
-              
+
               document.addEventListener('mousemove', handleMouseMove);
               document.addEventListener('mouseup', handleMouseUp);
             }}
@@ -565,18 +565,18 @@ export default function Home() {
               const slider = e.currentTarget;
               let startX = e.touches[0].pageX - slider.offsetLeft;
               let scrollLeft = slider.scrollLeft;
-              
+
               const handleTouchMove = (e: TouchEvent) => {
                 const x = e.touches[0].pageX - slider.offsetLeft;
-                const walk = (x - startX);
+                const walk = x - startX;
                 slider.scrollLeft = scrollLeft - walk;
               };
-              
+
               const handleTouchEnd = () => {
                 slider.removeEventListener('touchmove', handleTouchMove);
                 slider.removeEventListener('touchend', handleTouchEnd);
               };
-              
+
               slider.addEventListener('touchmove', handleTouchMove);
               slider.addEventListener('touchend', handleTouchEnd);
             }}
