@@ -415,25 +415,11 @@ export default function Home() {
               </li>
             </ul>
             <div className="relative flex justify-center w-full">
-              <div className="relative w-[220px] sm:w-[240px] md:w-[268px] h-[130px] sm:h-[145px] md:h-[160px]">
-                {/* Laptop frame */}
-                <img
-                  src={assets.laptopFrame}
-                  alt="Tenzr Dashboard"
-                  className="absolute inset-0 w-full h-full object-contain"
-                />
-                {/* Screen content on top - positioned to match Figma */}
-                <img
-                  src={assets.dashboardScreen}
-                  alt=""
-                  className="absolute top-[4px] sm:top-[5px] left-[28px] sm:left-[31px] md:left-[34px] w-[164px] sm:w-[182px] md:w-[200px] h-[93px] sm:h-[103px] md:h-[113px] object-contain"
-                />
-                <img
-                  src={assets.deviceShadow}
-                  alt=""
-                  className="absolute left-[-8px] bottom-0 w-[284px] h-[2px] mix-blend-multiply"
-                />
-              </div>
+              <img
+                src={assets.workflowLaptop}
+                alt="Tenzr Dashboard"
+                className="w-full max-w-[400px] sm:max-w-[450px] md:max-w-[500px] h-auto object-contain"
+              />
             </div>
           </div>
 
@@ -458,39 +444,12 @@ export default function Home() {
                 patients guided.
               </li>
             </ul>
-            <div className="flex gap-3 sm:gap-4 justify-center">
-              {/* Phone 1 */}
-              <div className="relative">
-                <img
-                  src={assets.iphoneFrame}
-                  alt="iPhone showing app"
-                  className="w-[120px] sm:w-[140px] md:w-[159px] h-[232px] sm:h-[270px] md:h-[307px] object-contain"
-                />
-                {/* Screen content overlay */}
-                <div className="absolute top-[6px] sm:top-[7px] md:top-[8px] left-[6px] sm:left-[7px] md:left-[8px] w-[108px] sm:w-[126px] md:w-[143px] h-[220px] sm:h-[256px] md:h-[291px] overflow-hidden rounded-[12px] sm:rounded-[14px] md:rounded-[15px]">
-                  <img
-                    src={assets.appScreenCheckIn}
-                    alt=""
-                    className="w-full h-full object-contain"
-                  />
-                </div>
-              </div>
-              {/* Phone 2 */}
-              <div className="relative">
-                <img
-                  src={assets.iphoneFrameAlt}
-                  alt="iPhone showing app"
-                  className="w-[120px] sm:w-[140px] md:w-[159px] h-[232px] sm:h-[270px] md:h-[307px] object-contain"
-                />
-                {/* Screen content overlay */}
-                <div className="absolute top-[6px] sm:top-[7px] md:top-[8px] left-[6px] sm:left-[7px] md:left-[8px] w-[108px] sm:w-[126px] md:w-[143px] h-[220px] sm:h-[256px] md:h-[291px] overflow-hidden rounded-[12px] sm:rounded-[14px] md:rounded-[15px]">
-                  <img
-                    src={assets.appScreenExercises}
-                    alt=""
-                    className="w-full h-full object-contain"
-                  />
-                </div>
-              </div>
+            <div className="relative flex justify-center w-full">
+              <img
+                src={assets.workflowTwoPhones}
+                alt="Patient app screens"
+                className="w-full max-w-[400px] sm:max-w-[450px] md:max-w-[500px] h-auto object-contain"
+              />
             </div>
           </div>
 
@@ -515,28 +474,12 @@ export default function Home() {
                 patients guided.
               </li>
             </ul>
-            <div className="h-[200px] sm:h-[225px] md:h-[253px] w-[220px] sm:w-[245px] md:w-[268px] relative overflow-hidden">
-              {/* Laptop - screen content is baked into this image */}
+            <div className="relative flex justify-center w-full">
               <img
-                src={assets.laptopWithContent}
-                alt="Laptop"
-                className="absolute top-[1px] left-[20px] sm:left-[22px] md:left-[25px] w-[344px] sm:w-[380px] md:w-[420px] h-[195px] sm:h-[215px] md:h-[238px] object-contain"
+                src={assets.workflowPhoneAndLaptop}
+                alt="Clinician dashboard"
+                className="w-full max-w-[400px] sm:max-w-[450px] md:max-w-[500px] h-auto object-contain"
               />
-              {/* Phone with screen content */}
-              <div className="absolute top-[21px] sm:top-[23px] md:top-[26px] left-[8px] sm:left-[9px] md:left-[10px] w-[88px] sm:w-[97px] md:w-[107px] h-[170px] sm:h-[188px] md:h-[207px]">
-                {/* Phone frame */}
-                <img
-                  src={assets.iphoneFrame}
-                  alt="iPhone"
-                  className="w-full h-full object-contain"
-                />
-                {/* Screen content - using appScreenProgress per Figma */}
-                <img
-                  src={assets.appScreenProgress}
-                  alt=""
-                  className="absolute top-[2px] sm:top-[3px] left-[5px] sm:left-[6px] w-[78px] sm:w-[86px] md:w-[95px] h-[164px] sm:h-[182px] md:h-[200px] object-contain rounded-[10px] sm:rounded-[11px] md:rounded-[12px]"
-                />
-              </div>
             </div>
           </div>
         </div>
@@ -551,7 +494,7 @@ export default function Home() {
           <img
             src={assets.celebrationIcon}
             alt=""
-            className="w-12 sm:w-14 md:w-16 h-12 sm:h-14 md:h-16 object-contain"
+            className="w-24 sm:w-28 md:w-32 h-24 sm:h-28 md:h-32 object-contain"
           />
           <h2 className="text-[26px] sm:text-[28px] md:text-[30px] lg:text-[32px] font-bold text-[#212529] leading-[1.2] text-center">
             Testimonials
@@ -586,61 +529,106 @@ export default function Home() {
         </div>
 
         {/* Patient Testimonials */}
-        <div className="flex flex-col gap-3 sm:gap-4 items-center w-full">
+        <div className="flex flex-col gap-5 sm:gap-6 md:gap-7 lg:gap-8 items-center w-full">
           <div className="flex items-center justify-center w-full px-4 sm:px-6 md:px-10 lg:px-12">
-            <h3 className="text-[18px] sm:text-[19px] md:text-[20px] lg:text-[22px] font-semibold text-[#212529] leading-[1.3] text-center flex-1">
+            <h3 className="text-[20px] sm:text-[22px] md:text-[24px] lg:text-[26px] font-semibold text-[#212529] leading-[1.3] text-center flex-1">
               Hear from our Patients
             </h3>
           </div>
-          <div className="w-full overflow-x-auto scrollbar-hide px-4 sm:px-6 md:px-10 lg:px-12">
-            <div className="flex gap-4 sm:gap-5 md:gap-6 w-max pb-2">
+          <div 
+            className="w-full overflow-x-auto scrollbar-hide px-4 sm:px-6 md:px-10 lg:px-12 cursor-grab active:cursor-grabbing touch-pan-x"
+            onMouseDown={(e) => {
+              const slider = e.currentTarget;
+              if (!slider) return;
+              let isDown = true;
+              let startX = e.pageX - slider.offsetLeft;
+              let scrollLeft = slider.scrollLeft;
+              
+              const handleMouseMove = (e: MouseEvent) => {
+                if (!isDown) return;
+                e.preventDefault();
+                const x = e.pageX - slider.offsetLeft;
+                const walk = (x - startX);
+                slider.scrollLeft = scrollLeft - walk;
+              };
+              
+              const handleMouseUp = () => {
+                isDown = false;
+                document.removeEventListener('mousemove', handleMouseMove);
+                document.removeEventListener('mouseup', handleMouseUp);
+              };
+              
+              document.addEventListener('mousemove', handleMouseMove);
+              document.addEventListener('mouseup', handleMouseUp);
+            }}
+            onTouchStart={(e) => {
+              const slider = e.currentTarget;
+              let startX = e.touches[0].pageX - slider.offsetLeft;
+              let scrollLeft = slider.scrollLeft;
+              
+              const handleTouchMove = (e: TouchEvent) => {
+                const x = e.touches[0].pageX - slider.offsetLeft;
+                const walk = (x - startX);
+                slider.scrollLeft = scrollLeft - walk;
+              };
+              
+              const handleTouchEnd = () => {
+                slider.removeEventListener('touchmove', handleTouchMove);
+                slider.removeEventListener('touchend', handleTouchEnd);
+              };
+              
+              slider.addEventListener('touchmove', handleTouchMove);
+              slider.addEventListener('touchend', handleTouchEnd);
+            }}
+          >
+            <div className="flex gap-5 sm:gap-6 md:gap-7 lg:gap-8 w-max pb-3">
               {/* Patient Card 1 */}
-              <div className="bg-white border-2 border-[#cdbee6] flex flex-col gap-4 sm:gap-5 md:gap-6 items-start justify-between p-5 sm:p-6 md:p-8 rounded-[16px] sm:rounded-[18px] md:rounded-[21px] shadow-[0px_3.568px_6.244px_0px_rgba(132,94,192,0.17)] min-h-[180px] sm:min-h-[200px] md:min-h-[220px] w-[280px] sm:w-[320px] md:w-[360px] flex-shrink-0">
-                <p className="text-[15px] sm:text-[15px] md:text-[16px] text-[#495057] leading-[1.5]">
+              <div className="bg-white border-2 border-[#cdbee6] flex flex-col gap-6 sm:gap-7 md:gap-8 items-start justify-between p-6 sm:p-7 md:p-9 lg:p-10 rounded-[18px] sm:rounded-[20px] md:rounded-[22px] shadow-[0px_3.568px_6.244px_0px_rgba(132,94,192,0.17)] min-h-[280px] sm:min-h-[320px] md:min-h-[360px] w-[320px] sm:w-[380px] md:w-[440px] lg:w-[480px] flex-shrink-0 select-none">
+                <p className="text-[20px] sm:text-[22px] md:text-[24px] lg:text-[26px] text-[#495057] leading-[1.5]">
                   &quot;Since physical therapy is mostly at home, some people
                   just need a kick in the butt to do their exercises, which is
                   what Tenzr does.&quot;
                 </p>
                 <div>
-                  <p className="text-[15px] sm:text-[15px] md:text-[16px] font-semibold text-[#212529] leading-[1.3]">
+                  <p className="text-[18px] sm:text-[19px] md:text-[20px] lg:text-[21px] font-semibold text-[#212529] leading-[1.3]">
                     Michael L.
                   </p>
-                  <p className="text-[13px] sm:text-[13px] md:text-[14px] text-[#495057] leading-[1.4]">
+                  <p className="text-[15px] sm:text-[16px] md:text-[17px] text-[#495057] leading-[1.4]">
                     Patient
                   </p>
                 </div>
               </div>
 
               {/* Patient Card 2 */}
-              <div className="bg-white border-2 border-[#cdbee6] flex flex-col gap-4 sm:gap-5 md:gap-6 items-start justify-between p-5 sm:p-6 md:p-8 rounded-[16px] sm:rounded-[18px] md:rounded-[21px] shadow-[0px_3.568px_6.244px_0px_rgba(132,94,192,0.17)] min-h-[180px] sm:min-h-[200px] md:min-h-[220px] w-[280px] sm:w-[320px] md:w-[360px] flex-shrink-0">
-                <p className="text-[15px] sm:text-[15px] md:text-[16px] text-[#495057] leading-[1.5]">
+              <div className="bg-white border-2 border-[#cdbee6] flex flex-col gap-6 sm:gap-7 md:gap-8 items-start justify-between p-6 sm:p-7 md:p-9 lg:p-10 rounded-[18px] sm:rounded-[20px] md:rounded-[22px] shadow-[0px_3.568px_6.244px_0px_rgba(132,94,192,0.17)] min-h-[280px] sm:min-h-[320px] md:min-h-[360px] w-[320px] sm:w-[380px] md:w-[440px] lg:w-[480px] flex-shrink-0 select-none">
+                <p className="text-[20px] sm:text-[22px] md:text-[24px] lg:text-[26px] text-[#495057] leading-[1.5]">
                   &quot;You never know if you&apos;re doing the right thing or
                   not when exercising. That&apos;s why this is such an amazing
                   tool, especially because in-person appointments can be few and
                   far between.&quot;
                 </p>
                 <div>
-                  <p className="text-[15px] sm:text-[15px] md:text-[16px] font-semibold text-[#212529] leading-[1.3]">
+                  <p className="text-[18px] sm:text-[19px] md:text-[20px] lg:text-[21px] font-semibold text-[#212529] leading-[1.3]">
                     Sarah D.
                   </p>
-                  <p className="text-[13px] sm:text-[13px] md:text-[14px] text-[#495057] leading-[1.4]">
+                  <p className="text-[15px] sm:text-[16px] md:text-[17px] text-[#495057] leading-[1.4]">
                     Patient
                   </p>
                 </div>
               </div>
 
               {/* Patient Card 3 */}
-              <div className="bg-white border-2 border-[#cdbee6] flex flex-col gap-4 sm:gap-5 md:gap-6 items-start justify-between p-5 sm:p-6 md:p-8 rounded-[16px] sm:rounded-[18px] md:rounded-[21px] shadow-[0px_3.568px_6.244px_0px_rgba(132,94,192,0.17)] min-h-[180px] sm:min-h-[200px] md:min-h-[220px] w-[280px] sm:w-[320px] md:w-[360px] flex-shrink-0">
-                <p className="text-[15px] sm:text-[15px] md:text-[16px] text-[#495057] leading-[1.5]">
+              <div className="bg-white border-2 border-[#cdbee6] flex flex-col gap-6 sm:gap-7 md:gap-8 items-start justify-between p-6 sm:p-7 md:p-9 lg:p-10 rounded-[18px] sm:rounded-[20px] md:rounded-[22px] shadow-[0px_3.568px_6.244px_0px_rgba(132,94,192,0.17)] min-h-[280px] sm:min-h-[320px] md:min-h-[360px] w-[320px] sm:w-[380px] md:w-[440px] lg:w-[480px] flex-shrink-0 select-none">
+                <p className="text-[20px] sm:text-[22px] md:text-[24px] lg:text-[26px] text-[#495057] leading-[1.5]">
                   &quot;Overall, the Tenzr app has made me more committed to my
                   physical therapy program, and I&apos;m seeing the
                   results.&quot;
                 </p>
                 <div>
-                  <p className="text-[15px] sm:text-[15px] md:text-[16px] font-semibold text-[#212529] leading-[1.3]">
+                  <p className="text-[18px] sm:text-[19px] md:text-[20px] lg:text-[21px] font-semibold text-[#212529] leading-[1.3]">
                     Lydia G.
                   </p>
-                  <p className="text-[13px] sm:text-[13px] md:text-[14px] text-[#495057] leading-[1.4]">
+                  <p className="text-[15px] sm:text-[16px] md:text-[17px] text-[#495057] leading-[1.4]">
                     Patient
                   </p>
                 </div>

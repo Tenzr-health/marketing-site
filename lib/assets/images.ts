@@ -17,18 +17,10 @@ export const assets = {
   recoveryWateringPlant: `${basePath}/assets/recoveryWateringPlant.png`,
   recoveryPlantGrowth: `${basePath}/assets/recoveryPlantGrowth.png`,
   
-  // Device mockups
-  laptopFrame: `${basePath}/assets/laptopFrame.png`,
-  laptopWithContent: `${basePath}/assets/laptopWithContent.png`,
-  iphoneFrame: `${basePath}/assets/iphoneFrame.png`,
-  iphoneFrameAlt: `${basePath}/assets/iphoneFrameAlt.png`,
-  deviceShadow: `${basePath}/assets/deviceShadow.png`,
-  
-  // App screen content (for device mockups)
-  dashboardScreen: `${basePath}/assets/dashboardScreen.png`,
-  appScreenCheckIn: `${basePath}/assets/appScreenCheckIn.png`,
-  appScreenExercises: `${basePath}/assets/appScreenExercises.png`,
-  appScreenProgress: `${basePath}/assets/appScreenProgress.png`,
+  // Workflow section images
+  workflowLaptop: `${basePath}/assets/laptop.png`,
+  workflowTwoPhones: `${basePath}/assets/two_phones.png`,
+  workflowPhoneAndLaptop: `${basePath}/assets/phone_and_laptop.png`,
   
   // Logo assets
   logoText: `${basePath}/assets/logoText.svg`,
